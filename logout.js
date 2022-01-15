@@ -75,21 +75,21 @@ const auth = getAuth();
 
 // });
 
-const user = auth.currentUser;
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    // User is signed in, see docs for a list of available properties
-    // https://firebase.google.com/docs/reference/js/firebase.User
-    const uid = user.uid;
-    window.location="index copy.html"
-    //bla bla bla
-    // ...
-  } else {
-    // User is signed out
-    // ...
-    //bla bla bla
-  }
-});
+// const user = auth.currentUser;
+// onAuthStateChanged(auth, (user) => {
+//   if (user) {
+//     // User is signed in, see docs for a list of available properties
+//     // https://firebase.google.com/docs/reference/js/firebase.User
+//     const uid = user.uid;
+//     window.location="index copy.html"
+//     //bla bla bla
+//     // ...
+//   } else {
+//     // User is signed out
+//     // ...
+//     //bla bla bla
+//   }
+// });
 
 logout.addEventListener('click',(e)=>{
 
